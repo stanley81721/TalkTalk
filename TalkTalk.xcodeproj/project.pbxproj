@@ -12,9 +12,12 @@
 		487972B91FA1BEC800143A78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487972B71FA1BEC800143A78 /* Main.storyboard */; };
 		487972BB1FA1BEC800143A78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 487972BA1FA1BEC800143A78 /* Assets.xcassets */; };
 		487972BE1FA1BEC800143A78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487972BC1FA1BEC800143A78 /* LaunchScreen.storyboard */; };
+		487972C91FA1C99C00143A78 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 487972C81FA1C99C00143A78 /* SWRevealViewController.m */; };
+		A59EFBF2C3616E406AFC25DA /* Pods_TalkTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6CED73A3D20C50C4C3BAF1 /* Pods_TalkTalk.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21869D7C190280D00739267B /* Pods-TalkTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkTalk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TalkTalk/Pods-TalkTalk.debug.xcconfig"; sourceTree = "<group>"; };
 		487972B01FA1BEC800143A78 /* TalkTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		487972B31FA1BEC800143A78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		487972B51FA1BEC800143A78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,11 @@
 		487972BA1FA1BEC800143A78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		487972BD1FA1BEC800143A78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		487972BF1FA1BEC800143A78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		487972C61FA1C99B00143A78 /* TalkTalk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TalkTalk-Bridging-Header.h"; sourceTree = "<group>"; };
+		487972C71FA1C99C00143A78 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		487972C81FA1C99C00143A78 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		A1C5D38BEA688BF317A3AE37 /* Pods-TalkTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkTalk.release.xcconfig"; path = "Pods/Target Support Files/Pods-TalkTalk/Pods-TalkTalk.release.xcconfig"; sourceTree = "<group>"; };
+		AD6CED73A3D20C50C4C3BAF1 /* Pods_TalkTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A59EFBF2C3616E406AFC25DA /* Pods_TalkTalk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43CED6FD9F36D3C0C91822DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21869D7C190280D00739267B /* Pods-TalkTalk.debug.xcconfig */,
+				A1C5D38BEA688BF317A3AE37 /* Pods-TalkTalk.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		487972A71FA1BEC800143A78 = {
 			isa = PBXGroup;
 			children = (
+				487972C51FA1C94900143A78 /* Supporting Files */,
 				487972B21FA1BEC800143A78 /* TalkTalk */,
 				487972B11FA1BEC800143A78 /* Products */,
+				43CED6FD9F36D3C0C91822DE /* Pods */,
+				E34EA39B8700F216CB262872 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +85,24 @@
 			path = TalkTalk;
 			sourceTree = "<group>";
 		};
+		487972C51FA1C94900143A78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				487972C71FA1C99C00143A78 /* SWRevealViewController.h */,
+				487972C81FA1C99C00143A78 /* SWRevealViewController.m */,
+				487972C61FA1C99B00143A78 /* TalkTalk-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E34EA39B8700F216CB262872 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD6CED73A3D20C50C4C3BAF1 /* Pods_TalkTalk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 487972C21FA1BEC800143A78 /* Build configuration list for PBXNativeTarget "TalkTalk" */;
 			buildPhases = (
+				12C48C172A43F6230764DC84 /* [CP] Check Pods Manifest.lock */,
 				487972AC1FA1BEC800143A78 /* Sources */,
 				487972AD1FA1BEC800143A78 /* Frameworks */,
 				487972AE1FA1BEC800143A78 /* Resources */,
+				4DD170F74A2AA84797129245 /* [CP] Embed Pods Frameworks */,
+				0F1D5BAF8E13C289F810D314 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +138,7 @@
 				TargetAttributes = {
 					487972AF1FA1BEC800143A78 = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +174,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F1D5BAF8E13C289F810D314 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TalkTalk/Pods-TalkTalk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12C48C172A43F6230764DC84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4DD170F74A2AA84797129245 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TalkTalk/Pods-TalkTalk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		487972AC1FA1BEC800143A78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +229,7 @@
 			files = (
 				487972B61FA1BEC800143A78 /* ViewController.swift in Sources */,
 				487972B41FA1BEC800143A78 /* AppDelegate.swift in Sources */,
+				487972C91FA1C99C00143A78 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,14 +364,18 @@
 		};
 		487972C31FA1BEC800143A78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21869D7C190280D00739267B /* Pods-TalkTalk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NEP442UGF8;
 				INFOPLIST_FILE = TalkTalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Stanley.TalkTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/TalkTalk-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,14 +383,17 @@
 		};
 		487972C41FA1BEC800143A78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C5D38BEA688BF317A3AE37 /* Pods-TalkTalk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NEP442UGF8;
 				INFOPLIST_FILE = TalkTalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Stanley.TalkTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/TalkTalk-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
