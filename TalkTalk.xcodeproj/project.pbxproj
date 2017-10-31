@@ -17,6 +17,7 @@
 		48FE3DE71FA1E45D00B792AF /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE3DE61FA1E45D00B792AF /* GradientView.swift */; };
 		48FE3DEA1FA2E2AA00B792AF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE3DE91FA2E2AA00B792AF /* Constants.swift */; };
 		48FE3E0A1FA84EE300B792AF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE3E091FA84EE300B792AF /* LoginViewController.swift */; };
+		48FE3E0C1FA857DB00B792AF /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE3E0B1FA857DB00B792AF /* CreateAccountViewController.swift */; };
 		A59EFBF2C3616E406AFC25DA /* Pods_TalkTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6CED73A3D20C50C4C3BAF1 /* Pods_TalkTalk.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		48FE3DE61FA1E45D00B792AF /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		48FE3DE91FA2E2AA00B792AF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		48FE3E091FA84EE300B792AF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		48FE3E0B1FA857DB00B792AF /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		A1C5D38BEA688BF317A3AE37 /* Pods-TalkTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkTalk.release.xcconfig"; path = "Pods/Target Support Files/Pods-TalkTalk/Pods-TalkTalk.release.xcconfig"; sourceTree = "<group>"; };
 		AD6CED73A3D20C50C4C3BAF1 /* Pods_TalkTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -102,6 +104,7 @@
 				487972CD1FA1D76F00143A78 /* ChatViewController.swift */,
 				487972CF1FA1D77F00143A78 /* ChannelViewController.swift */,
 				48FE3E091FA84EE300B792AF /* LoginViewController.swift */,
+				48FE3E0B1FA857DB00B792AF /* CreateAccountViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				487972B41FA1BEC800143A78 /* AppDelegate.swift in Sources */,
 				487972CE1FA1D76F00143A78 /* ChatViewController.swift in Sources */,
 				48FE3DE71FA1E45D00B792AF /* GradientView.swift in Sources */,
+				48FE3E0C1FA857DB00B792AF /* CreateAccountViewController.swift in Sources */,
 				487972D01FA1D77F00143A78 /* ChannelViewController.swift in Sources */,
 				48FE3DE51FA1E15A00B792AF /* SWRevealViewController.m in Sources */,
 				48FE3DEA1FA2E2AA00B792AF /* Constants.swift in Sources */,
