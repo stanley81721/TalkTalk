@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		487972B41FA1BEC800143A78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487972B31FA1BEC800143A78 /* AppDelegate.swift */; };
-		487972B61FA1BEC800143A78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487972B51FA1BEC800143A78 /* ViewController.swift */; };
 		487972B91FA1BEC800143A78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487972B71FA1BEC800143A78 /* Main.storyboard */; };
 		487972BB1FA1BEC800143A78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 487972BA1FA1BEC800143A78 /* Assets.xcassets */; };
 		487972BE1FA1BEC800143A78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487972BC1FA1BEC800143A78 /* LaunchScreen.storyboard */; };
-		487972C91FA1C99C00143A78 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 487972C81FA1C99C00143A78 /* SWRevealViewController.m */; };
+		487972CE1FA1D76F00143A78 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487972CD1FA1D76F00143A78 /* ChatViewController.swift */; };
+		487972D01FA1D77F00143A78 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487972CF1FA1D77F00143A78 /* ChannelViewController.swift */; };
+		48FE3DE51FA1E15A00B792AF /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FE3DE41FA1E15A00B792AF /* SWRevealViewController.m */; };
+		48FE3DE71FA1E45D00B792AF /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE3DE61FA1E45D00B792AF /* GradientView.swift */; };
+		48FE3DEA1FA2E2AA00B792AF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE3DE91FA2E2AA00B792AF /* Constants.swift */; };
+		48FE3E0A1FA84EE300B792AF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE3E091FA84EE300B792AF /* LoginViewController.swift */; };
 		A59EFBF2C3616E406AFC25DA /* Pods_TalkTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6CED73A3D20C50C4C3BAF1 /* Pods_TalkTalk.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,14 +24,18 @@
 		21869D7C190280D00739267B /* Pods-TalkTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkTalk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TalkTalk/Pods-TalkTalk.debug.xcconfig"; sourceTree = "<group>"; };
 		487972B01FA1BEC800143A78 /* TalkTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		487972B31FA1BEC800143A78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		487972B51FA1BEC800143A78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		487972B81FA1BEC800143A78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		487972BA1FA1BEC800143A78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		487972BD1FA1BEC800143A78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		487972BF1FA1BEC800143A78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		487972C61FA1C99B00143A78 /* TalkTalk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TalkTalk-Bridging-Header.h"; sourceTree = "<group>"; };
-		487972C71FA1C99C00143A78 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		487972C81FA1C99C00143A78 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		487972CD1FA1D76F00143A78 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		487972CF1FA1D77F00143A78 /* ChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
+		48FE3DE21FA1E15800B792AF /* TalkTalk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TalkTalk-Bridging-Header.h"; sourceTree = "<group>"; };
+		48FE3DE31FA1E15A00B792AF /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		48FE3DE41FA1E15A00B792AF /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		48FE3DE61FA1E45D00B792AF /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		48FE3DE91FA2E2AA00B792AF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		48FE3E091FA84EE300B792AF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A1C5D38BEA688BF317A3AE37 /* Pods-TalkTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkTalk.release.xcconfig"; path = "Pods/Target Support Files/Pods-TalkTalk/Pods-TalkTalk.release.xcconfig"; sourceTree = "<group>"; };
 		AD6CED73A3D20C50C4C3BAF1 /* Pods_TalkTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -56,7 +64,6 @@
 		487972A71FA1BEC800143A78 = {
 			isa = PBXGroup;
 			children = (
-				487972C51FA1C94900143A78 /* Supporting Files */,
 				487972B21FA1BEC800143A78 /* TalkTalk */,
 				487972B11FA1BEC800143A78 /* Products */,
 				43CED6FD9F36D3C0C91822DE /* Pods */,
@@ -75,8 +82,12 @@
 		487972B21FA1BEC800143A78 /* TalkTalk */ = {
 			isa = PBXGroup;
 			children = (
+				48FE3DE81FA2E28000B792AF /* Utilities */,
+				48FE3DDE1FA1E02100B792AF /* Supporting Files */,
+				487972CC1FA1CD2400143A78 /* Model */,
+				487972CB1FA1CD1E00143A78 /* View */,
+				487972CA1FA1CD1700143A78 /* Controller */,
 				487972B31FA1BEC800143A78 /* AppDelegate.swift */,
-				487972B51FA1BEC800143A78 /* ViewController.swift */,
 				487972B71FA1BEC800143A78 /* Main.storyboard */,
 				487972BA1FA1BEC800143A78 /* Assets.xcassets */,
 				487972BC1FA1BEC800143A78 /* LaunchScreen.storyboard */,
@@ -85,14 +96,48 @@
 			path = TalkTalk;
 			sourceTree = "<group>";
 		};
-		487972C51FA1C94900143A78 /* Supporting Files */ = {
+		487972CA1FA1CD1700143A78 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				487972C71FA1C99C00143A78 /* SWRevealViewController.h */,
-				487972C81FA1C99C00143A78 /* SWRevealViewController.m */,
-				487972C61FA1C99B00143A78 /* TalkTalk-Bridging-Header.h */,
+				487972CD1FA1D76F00143A78 /* ChatViewController.swift */,
+				487972CF1FA1D77F00143A78 /* ChannelViewController.swift */,
+				48FE3E091FA84EE300B792AF /* LoginViewController.swift */,
 			);
-			path = "Supporting Files";
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		487972CB1FA1CD1E00143A78 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48FE3DE61FA1E45D00B792AF /* GradientView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		487972CC1FA1CD2400143A78 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48FE3DDE1FA1E02100B792AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				48FE3DE31FA1E15A00B792AF /* SWRevealViewController.h */,
+				48FE3DE41FA1E15A00B792AF /* SWRevealViewController.m */,
+				48FE3DE21FA1E15800B792AF /* TalkTalk-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		48FE3DE81FA2E28000B792AF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				48FE3DE91FA2E2AA00B792AF /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		E34EA39B8700F216CB262872 /* Frameworks */ = {
@@ -227,9 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				487972B61FA1BEC800143A78 /* ViewController.swift in Sources */,
+				48FE3E0A1FA84EE300B792AF /* LoginViewController.swift in Sources */,
 				487972B41FA1BEC800143A78 /* AppDelegate.swift in Sources */,
-				487972C91FA1C99C00143A78 /* SWRevealViewController.m in Sources */,
+				487972CE1FA1D76F00143A78 /* ChatViewController.swift in Sources */,
+				48FE3DE71FA1E45D00B792AF /* GradientView.swift in Sources */,
+				487972D01FA1D77F00143A78 /* ChannelViewController.swift in Sources */,
+				48FE3DE51FA1E15A00B792AF /* SWRevealViewController.m in Sources */,
+				48FE3DEA1FA2E2AA00B792AF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +423,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Stanley.TalkTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/TalkTalk-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "TalkTalk/New Group/TalkTalk-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -393,7 +442,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Stanley.TalkTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/TalkTalk-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "TalkTalk/New Group/TalkTalk-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
