@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -153,7 +153,7 @@
                                     <action selector="closePressed:" destination="tpN-Dw-TQX" eventType="touchUpInside" id="ZQj-br-fhY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha0-SV-qrV">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha0-SV-qrV" customClass="RoundedButton" customModule="TalkTalk" customModuleProvider="target">
                                 <rect key="frame" x="62" y="597" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.36793847750000003" green="0.94040295470000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -164,6 +164,14 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createAccountPressed:" destination="tpN-Dw-TQX" eventType="touchUpInside" id="SE5-mY-9to"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydc-k9-cwW">
                                 <rect key="frame" x="137" y="309" width="100" height="130"/>
@@ -176,6 +184,7 @@
                                 </state>
                                 <connections>
                                     <action selector="CreateAccountBtnPressed:" destination="tpN-Dw-TQX" eventType="touchUpInside" id="64j-ug-nR2"/>
+                                    <action selector="pickAvatarPressed:" destination="tpN-Dw-TQX" eventType="touchUpInside" id="tDy-1D-JWI"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="1xe-hg-u4g">
@@ -252,6 +261,7 @@
                                 </state>
                                 <connections>
                                     <action selector="CreateAccountBtnPressed:" destination="tpN-Dw-TQX" eventType="touchUpInside" id="0OD-bg-W3M"/>
+                                    <action selector="pickBGColorPressed:" destination="tpN-Dw-TQX" eventType="touchUpInside" id="Ass-ma-iyC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -276,6 +286,10 @@
                         <viewLayoutGuide key="safeArea" id="20n-1s-oNb"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="wbR-k7-0T4" id="VX0-QZ-neG"/>
+                        <outlet property="passTxt" destination="XdS-2h-Ejr" id="uDf-OP-fQW"/>
+                        <outlet property="userImg" destination="yxr-yD-68v" id="sfZ-TP-wJr"/>
+                        <outlet property="usernameTxt" destination="2PE-uD-Gxp" id="nYT-6L-3xy"/>
                         <segue destination="if4-qn-Xki" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="WKQ-r5-wAt"/>
                     </connections>
                 </viewController>
@@ -318,7 +332,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ni-oa-3M0">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ni-oa-3M0" customClass="RoundedButton" customModule="TalkTalk" customModuleProvider="target">
                                 <rect key="frame" x="62" y="276" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.36793847750000003" green="0.94040295470000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -326,9 +340,14 @@
                                     <constraint firstAttribute="height" constant="50" id="v5w-xU-ej5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zy-bm-VLc">
                                 <rect key="frame" x="62" y="326" width="250" height="26"/>
