@@ -12,6 +12,8 @@
 		482E287C1FAAC904004AB124 /* AvatarPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482E287B1FAAC904004AB124 /* AvatarPickerViewController.swift */; };
 		482E287E1FAACE6B004AB124 /* AvatarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482E287D1FAACE6B004AB124 /* AvatarCollectionViewCell.swift */; };
 		482E28801FAB1806004AB124 /* CirecleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482E287F1FAB1806004AB124 /* CirecleImageView.swift */; };
+		482E28831FAB6F2F004AB124 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482E28811FAB6F2F004AB124 /* ProfileViewController.swift */; };
+		482E28841FAB6F2F004AB124 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482E28821FAB6F2F004AB124 /* ProfileViewController.xib */; };
 		487972B41FA1BEC800143A78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487972B31FA1BEC800143A78 /* AppDelegate.swift */; };
 		487972B91FA1BEC800143A78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487972B71FA1BEC800143A78 /* Main.storyboard */; };
 		487972BB1FA1BEC800143A78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 487972BA1FA1BEC800143A78 /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 		482E287B1FAAC904004AB124 /* AvatarPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerViewController.swift; sourceTree = "<group>"; };
 		482E287D1FAACE6B004AB124 /* AvatarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCollectionViewCell.swift; sourceTree = "<group>"; };
 		482E287F1FAB1806004AB124 /* CirecleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirecleImageView.swift; sourceTree = "<group>"; };
+		482E28811FAB6F2F004AB124 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		482E28821FAB6F2F004AB124 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		487972B01FA1BEC800143A78 /* TalkTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		487972B31FA1BEC800143A78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		487972B81FA1BEC800143A78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,6 +79,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		482E28851FAB6F6B004AB124 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				482E28821FAB6F2F004AB124 /* ProfileViewController.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
 		487972A71FA1BEC800143A78 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +108,7 @@
 		487972B21FA1BEC800143A78 /* TalkTalk */ = {
 			isa = PBXGroup;
 			children = (
+				482E28851FAB6F6B004AB124 /* XIBs */,
 				48D8A3F91FA9B9FA005F5587 /* Services */,
 				48FE3DE81FA2E28000B792AF /* Utilities */,
 				48FE3DDE1FA1E02100B792AF /* Supporting Files */,
@@ -119,6 +132,7 @@
 				48FE3E091FA84EE300B792AF /* LoginViewController.swift */,
 				48FE3E0B1FA857DB00B792AF /* CreateAccountViewController.swift */,
 				482E287B1FAAC904004AB124 /* AvatarPickerViewController.swift */,
+				482E28811FAB6F2F004AB124 /* ProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -242,6 +256,7 @@
 			files = (
 				487972BE1FA1BEC800143A78 /* LaunchScreen.storyboard in Resources */,
 				487972BB1FA1BEC800143A78 /* Assets.xcassets in Resources */,
+				482E28841FAB6F2F004AB124 /* ProfileViewController.xib in Resources */,
 				487972B91FA1BEC800143A78 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +328,7 @@
 				48FE3DE71FA1E45D00B792AF /* GradientView.swift in Sources */,
 				48FE3E0C1FA857DB00B792AF /* CreateAccountViewController.swift in Sources */,
 				487972D01FA1D77F00143A78 /* ChannelViewController.swift in Sources */,
+				482E28831FAB6F2F004AB124 /* ProfileViewController.swift in Sources */,
 				48FE3DE51FA1E15A00B792AF /* SWRevealViewController.m in Sources */,
 				48FE3DEA1FA2E2AA00B792AF /* Constants.swift in Sources */,
 			);
