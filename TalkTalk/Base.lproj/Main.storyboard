@@ -126,6 +126,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="yTV-Bw-Sa7" id="YXE-PC-sru"/>
+                        <outlet property="userImg" destination="so7-n6-ElU" id="DEx-1i-TRF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RiC-TK-DeN" userLabel="First Responder" sceneMemberID="firstResponder"/>
