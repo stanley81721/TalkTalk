@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4816B1D41FA9CA4200F61C4A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4816B1D31FA9CA4200F61C4A /* RoundedButton.swift */; };
 		4816B1D61FAA345100F61C4A /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4816B1D51FAA345100F61C4A /* UserDataService.swift */; };
+		482E287C1FAAC904004AB124 /* AvatarPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482E287B1FAAC904004AB124 /* AvatarPickerViewController.swift */; };
+		482E287E1FAACE6B004AB124 /* AvatarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482E287D1FAACE6B004AB124 /* AvatarCollectionViewCell.swift */; };
+		482E28801FAB1806004AB124 /* CirecleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482E287F1FAB1806004AB124 /* CirecleImageView.swift */; };
 		487972B41FA1BEC800143A78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487972B31FA1BEC800143A78 /* AppDelegate.swift */; };
 		487972B91FA1BEC800143A78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487972B71FA1BEC800143A78 /* Main.storyboard */; };
 		487972BB1FA1BEC800143A78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 487972BA1FA1BEC800143A78 /* Assets.xcassets */; };
@@ -28,6 +31,9 @@
 		21869D7C190280D00739267B /* Pods-TalkTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkTalk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TalkTalk/Pods-TalkTalk.debug.xcconfig"; sourceTree = "<group>"; };
 		4816B1D31FA9CA4200F61C4A /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		4816B1D51FAA345100F61C4A /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
+		482E287B1FAAC904004AB124 /* AvatarPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerViewController.swift; sourceTree = "<group>"; };
+		482E287D1FAACE6B004AB124 /* AvatarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCollectionViewCell.swift; sourceTree = "<group>"; };
+		482E287F1FAB1806004AB124 /* CirecleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirecleImageView.swift; sourceTree = "<group>"; };
 		487972B01FA1BEC800143A78 /* TalkTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		487972B31FA1BEC800143A78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		487972B81FA1BEC800143A78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,6 +118,7 @@
 				487972CF1FA1D77F00143A78 /* ChannelViewController.swift */,
 				48FE3E091FA84EE300B792AF /* LoginViewController.swift */,
 				48FE3E0B1FA857DB00B792AF /* CreateAccountViewController.swift */,
+				482E287B1FAAC904004AB124 /* AvatarPickerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -121,6 +128,8 @@
 			children = (
 				48FE3DE61FA1E45D00B792AF /* GradientView.swift */,
 				4816B1D31FA9CA4200F61C4A /* RoundedButton.swift */,
+				482E287D1FAACE6B004AB124 /* AvatarCollectionViewCell.swift */,
+				482E287F1FAB1806004AB124 /* CirecleImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -296,8 +305,11 @@
 				4816B1D41FA9CA4200F61C4A /* RoundedButton.swift in Sources */,
 				487972B41FA1BEC800143A78 /* AppDelegate.swift in Sources */,
 				4816B1D61FAA345100F61C4A /* UserDataService.swift in Sources */,
+				482E287E1FAACE6B004AB124 /* AvatarCollectionViewCell.swift in Sources */,
 				487972CE1FA1D76F00143A78 /* ChatViewController.swift in Sources */,
+				482E28801FAB1806004AB124 /* CirecleImageView.swift in Sources */,
 				48D8A3FB1FA9BA33005F5587 /* AuthService.swift in Sources */,
+				482E287C1FAAC904004AB124 /* AvatarPickerViewController.swift in Sources */,
 				48FE3DE71FA1E45D00B792AF /* GradientView.swift in Sources */,
 				48FE3E0C1FA857DB00B792AF /* CreateAccountViewController.swift in Sources */,
 				487972D01FA1D77F00143A78 /* ChannelViewController.swift in Sources */,
