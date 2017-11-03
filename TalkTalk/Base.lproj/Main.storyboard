@@ -445,6 +445,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="MFt-DE-S7e" eventType="touchUpInside" id="3tW-EC-wVl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zy-bm-VLc">
                                 <rect key="frame" x="62" y="326" width="250" height="26"/>
@@ -502,13 +505,19 @@
                                     <constraint firstItem="rbu-oU-Y34" firstAttribute="centerX" secondItem="7VF-2x-xqW" secondAttribute="centerX" id="0l9-rm-IRR"/>
                                 </constraints>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="I4d-cm-I62">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="I4d-cm-I62" firstAttribute="centerX" secondItem="wmj-1a-HBc" secondAttribute="centerX" id="7C4-1a-UnE"/>
                             <constraint firstItem="VWP-MZ-RkL" firstAttribute="centerX" secondItem="wmj-1a-HBc" secondAttribute="centerX" id="9ne-EF-EbN"/>
                             <constraint firstItem="7zy-bm-VLc" firstAttribute="centerX" secondItem="wmj-1a-HBc" secondAttribute="centerX" id="Dai-Sr-le9"/>
                             <constraint firstItem="5ni-oa-3M0" firstAttribute="top" secondItem="7VF-2x-xqW" secondAttribute="bottom" constant="40" id="Qag-aA-33c"/>
                             <constraint firstItem="5ni-oa-3M0" firstAttribute="centerX" secondItem="wmj-1a-HBc" secondAttribute="centerX" id="fQu-Yc-LS4"/>
+                            <constraint firstItem="I4d-cm-I62" firstAttribute="centerY" secondItem="wmj-1a-HBc" secondAttribute="centerY" constant="-100" id="gsx-yh-pu9"/>
                             <constraint firstItem="7VF-2x-xqW" firstAttribute="centerX" secondItem="wmj-1a-HBc" secondAttribute="centerX" id="hjF-g9-b5G"/>
                             <constraint firstItem="Yg2-8x-srI" firstAttribute="trailing" secondItem="MeM-u0-cGj" secondAttribute="trailing" constant="16" id="mva-nO-Pcl"/>
                             <constraint firstItem="7zy-bm-VLc" firstAttribute="top" secondItem="5ni-oa-3M0" secondAttribute="bottom" id="onq-fD-Sc8"/>
@@ -519,6 +528,9 @@
                         <viewLayoutGuide key="safeArea" id="Yg2-8x-srI"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="rbu-oU-Y34" id="m82-jf-YwA"/>
+                        <outlet property="spinner" destination="I4d-cm-I62" id="CGg-k7-PWi"/>
+                        <outlet property="usernameTxt" destination="5UN-Fw-Wvm" id="oyT-ic-dnd"/>
                         <segue destination="tpN-Dw-TQX" kind="show" identifier="toCreateAccount" id="S2f-uA-nHH"/>
                     </connections>
                 </viewController>
@@ -534,7 +546,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hvU-T4-TaC">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hvU-T4-TaC" customClass="GradientView" customModule="TalkTalk" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6VB-lV-o9L">
