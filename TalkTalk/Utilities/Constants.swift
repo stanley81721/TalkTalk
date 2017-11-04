@@ -23,6 +23,8 @@ let talktalkPurplePlaceholder = #colorLiteral(red: 0.3679384775, green: 0.940402
 
 // Notification
 let NOTIFI_USER_DATA_DID_CHANGE = Notification.Name("notifiUserDataChanged")
+let NOTIFI_CHANNELS_LOADED = Notification.Name("channelsLoaded")
+let NOTIFI_CHANNEL_SELECTED = Notification.Name("channelSelected")
 
 //Segues
 let TO_LOGIN = "toLogin"

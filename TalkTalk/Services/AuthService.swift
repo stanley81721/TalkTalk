@@ -131,7 +131,6 @@ class AuthService {
     }
     
     func setUserInfo(data: Data) {
-        
         let json = JSON(data: data)
         let id = json["_id"].stringValue
         let avatarColor = json["avatarColor"].stringValue

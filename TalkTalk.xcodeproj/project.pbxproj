@@ -19,6 +19,7 @@
 		482E288B1FAC25F5004AB124 /* ChannelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482E288A1FAC25F5004AB124 /* ChannelTableViewCell.swift */; };
 		482E288E1FAC2D02004AB124 /* AddChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482E288C1FAC2D02004AB124 /* AddChannelViewController.swift */; };
 		482E288F1FAC2D02004AB124 /* AddChannelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482E288D1FAC2D02004AB124 /* AddChannelViewController.xib */; };
+		482E28911FAC3B68004AB124 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482E28901FAC3B68004AB124 /* SocketService.swift */; };
 		487972B41FA1BEC800143A78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487972B31FA1BEC800143A78 /* AppDelegate.swift */; };
 		487972B91FA1BEC800143A78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487972B71FA1BEC800143A78 /* Main.storyboard */; };
 		487972BB1FA1BEC800143A78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 487972BA1FA1BEC800143A78 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		482E288A1FAC25F5004AB124 /* ChannelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableViewCell.swift; sourceTree = "<group>"; };
 		482E288C1FAC2D02004AB124 /* AddChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelViewController.swift; sourceTree = "<group>"; };
 		482E288D1FAC2D02004AB124 /* AddChannelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelViewController.xib; sourceTree = "<group>"; };
+		482E28901FAC3B68004AB124 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		487972B01FA1BEC800143A78 /* TalkTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		487972B31FA1BEC800143A78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		487972B81FA1BEC800143A78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				48D8A3FA1FA9BA33005F5587 /* AuthService.swift */,
 				4816B1D51FAA345100F61C4A /* UserDataService.swift */,
 				482E28861FAC1F94004AB124 /* MessageService.swift */,
+				482E28901FAC3B68004AB124 /* SocketService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				482E28911FAC3B68004AB124 /* SocketService.swift in Sources */,
 				48FE3E0A1FA84EE300B792AF /* LoginViewController.swift in Sources */,
 				4816B1D41FA9CA4200F61C4A /* RoundedButton.swift in Sources */,
 				487972B41FA1BEC800143A78 /* AppDelegate.swift in Sources */,
