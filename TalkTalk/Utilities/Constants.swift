@@ -17,6 +17,7 @@ let URL_LOGIN = "\(BASE_URL)account/login"
 let URL_USER_ADD = "\(BASE_URL)user/add"
 let URL_USER_BY_EMAIL = "\(BASE_URL)user/byEmail/"
 let URL_GET_CHANNELS = "\(BASE_URL)channel"
+let URL_GET_MESSAGES = "\(BASE_URL)message/byChannel"
 
 // Color
 let talktalkPurplePlaceholder = #colorLiteral(red: 0.3679384775, green: 0.9404029547, blue: 1, alpha: 0.5)
