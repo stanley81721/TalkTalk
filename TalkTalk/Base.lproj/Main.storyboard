@@ -666,14 +666,22 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TED-Ku-Mln">
+                                <rect key="frame" x="8" y="622" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="TED-Ku-Mln" firstAttribute="leading" secondItem="TvS-mg-QOJ" secondAttribute="leading" constant="8" id="47c-8Q-fHL"/>
                             <constraint firstItem="TvS-mg-QOJ" firstAttribute="trailing" secondItem="61h-TE-Rpc" secondAttribute="trailing" constant="8" id="5kb-TV-c4G"/>
                             <constraint firstItem="hvU-T4-TaC" firstAttribute="top" secondItem="b5w-f3-ECG" secondAttribute="top" id="Hhj-wR-Hn3"/>
                             <constraint firstItem="TvS-mg-QOJ" firstAttribute="trailing" secondItem="sYW-se-DEM" secondAttribute="trailing" id="OBR-ui-Mwf"/>
                             <constraint firstItem="hvU-T4-TaC" firstAttribute="leading" secondItem="TvS-mg-QOJ" secondAttribute="leading" id="Pp9-pz-pqb"/>
                             <constraint firstItem="hvU-T4-TaC" firstAttribute="trailing" secondItem="TvS-mg-QOJ" secondAttribute="trailing" id="aDy-bG-j91"/>
+                            <constraint firstItem="qsm-MZ-NZS" firstAttribute="top" secondItem="TED-Ku-Mln" secondAttribute="bottom" constant="5" id="brJ-G6-3C1"/>
                             <constraint firstItem="qsm-MZ-NZS" firstAttribute="bottom" secondItem="TvS-mg-QOJ" secondAttribute="bottom" id="dWs-7G-ceg"/>
                             <constraint firstItem="TvS-mg-QOJ" firstAttribute="trailing" secondItem="qsm-MZ-NZS" secondAttribute="trailing" id="efk-FA-AJi"/>
                             <constraint firstItem="qsm-MZ-NZS" firstAttribute="top" secondItem="sYW-se-DEM" secondAttribute="bottom" constant="30" id="hWz-NO-1wh"/>
@@ -690,6 +698,7 @@
                         <outlet property="messageTxtBox" destination="qsm-MZ-NZS" id="5ZE-lw-tUc"/>
                         <outlet property="sendBtn" destination="61h-TE-Rpc" id="NBb-aJ-hXU"/>
                         <outlet property="tableView" destination="sYW-se-DEM" id="Dz7-BM-Sbk"/>
+                        <outlet property="typingUsersLbl" destination="TED-Ku-Mln" id="XqX-WY-cpZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BVp-bs-eb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
