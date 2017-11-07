@@ -23,6 +23,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.bindToKeyboard()
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -30,7 +31,6 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.rowHeight = UITableViewAutomaticDimension
         sendBtn.isHidden = true
         
-        view.bindToKeyboard()
         let tap = UITapGestureRecognizer(target: self, action: #selector(ChatViewController.handleTap))
         view.addGestureRecognizer(tap)
         menuBtn.addTarget(self.revealViewController, action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
@@ -163,6 +163,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func getMessages() {
         guard let channelId = MessageService.instance.selectedChannel?.id else { return }
+        print("channelId = \(channelId)")
         MessageService.instance.findAllMessagesForChannel(channelId: channelId) { (success) in
             if success {
                 self.tableView.reloadData()
